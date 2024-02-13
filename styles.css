@@ -1,0 +1,102 @@
+/*Testovacia zona zaciatok*/
+ /*p ~ ul Najdi p za ktorym je ul a zafarbi na zlto*/
+/*
+p ~ ul{
+    background: yellow;
+*/
+
+
+/*Testovacia zona koniec*/
+
+.test {
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    overflow: hidden;
+    
+}    
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #18293b;
+}
+
+
+.slider {
+    width: 700px;
+    height: 372px;
+    overflow: hidden;
+}
+
+.slide img { 
+    width: 100%;
+    height: 100%;
+}
+
+.middle{ /*zarovnanie vsetkeho na stred*/
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+
+
+.bar{  /*toto budu tlacitka pod obrazkom*/
+    width: 50px;  
+    height:10px;
+    border: 2px solid #fff;
+    margin: 5px;
+    cursor: pointer;
+ }   
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    display: flex;
+}
+
+.bar:hover{
+    background: #fff;
+}
+
+input[name="r"]{
+    display: none;
+}
+
+/*FOTKY VEDLA SEBA*/
+
+.slides {
+    width: 500%; /*keby tam mam 6fotiek tak 600% atd...*/
+    height: 100%;
+    display: flex; /*da to fotky vedla seba ,nie pod seba*/
+}
+
+.slide{ /*iba obrazok*/
+    width: 20%;
+}    
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -80%;
+}
